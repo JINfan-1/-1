@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"微软雅黑";
+}
+body{
+    background-color:rgb(159, 158, 155);
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* 顶部区域 */
+
+header{
+    background-color:rgba(0, 0, 0, 0.786) ;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    width:100%;
+    margin-bottom: 15px;
+    justify-content: space-between
+}
+.head1{
+    font-size:40px;
+    color:aliceblue;
+}
+.search-container{
+    height:40px;
+    line-height: 40px;
+    display:flex;
+}
+.search-container input{
+    height:40px;
+    line-height: 40px;
+    outline:none;
+    border:none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.search-container button{
+    height:40px;
+    padding:5px;
+    background-color: rgb(101, 158, 223);
+    color:aliceblue;
+    outline:none;
+    border:none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.head2{
+    width: 100px;
+    height: 30px;
+    border:none;
+    border-radius: 8px;
+    font-size:15px;
+    padding:5px 10px;
+    background-color: rgb(101, 158, 223);
+    color:aliceblue
+            
+}
+.head2:hover{
+    background-color: rgb(159, 158, 155);
+    cursor:pointer;
+}
+.com1{
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    margin:0 20px;
+}
+
+/* 导航区域 */
+
+nav{
+    background-color: rgb(255, 255, 255);
+    width:auto;
+    align-items: center;
+    padding-right:5px;
+    margin-bottom: 5px;
+    display: flex;
+    overflow-x: auto; 
+}
+nav a{
+    color:aliceblue;
+    padding: 20px;
+    display:inline-block;
+    background-color: rgb(110, 165, 213);
+    min-width: 180px;
+    text-decoration: none;
+    margin: 0 1px;
+}
+nav a:hover{
+    background:rgb(159, 158, 155);
+}
+nav a:focus{
+    background:rgb(81, 142, 188);
+    color: black;
+    font-weight: bolder;
+}
+
+/* 主内容区域 */
+
+.combine{
+    flex: 1;
+    display: flex;
+}
+.container{
+    flex:3;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    padding: 25px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.container hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.card,.list{
+    background-color: rgb(255, 255, 255);
+}
+.card{
+    text-align: center;
+    display: flex;
+    margin-bottom: 15px;
+}
+.card p{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.card1,.card2{
+    background-color: rgb(165, 157, 157);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card1{
+    background-color: rgb(255, 183, 82);
+}
+.card2{
+    background-color:rgb(155, 219, 61);
+}
+.container h2{
+    background-color: rgb(170, 254, 226);
+    border-top-left-radius: 10px;
+    padding-left: 10px;
+}
+.list{
+    overflow-x: auto; 
+}
+.list table{
+    background-color: rgb(255, 236, 213);
+    width: 100%;
+    text-align: center;
+    border-collapse:collapse;
+}
+.list td,.list th{
+    border: 2px solid #ffdb9c;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+/* 附加信息区域 */
+
+.extra{
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    padding: 10px;
+}
+.extra h1{
+    font-size: 30px;
+    background-color: rgb(170, 254, 226);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.extra ul{
+    padding-left: 30px;
+    background-color:rgb(215, 253, 186);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.extra1,.extra2,.extra3,.extra{
+    margin-bottom: 10px;
+}
+@media screen and (max-width:768px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .head1{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .card h1{
+        font-size: 18px;
+    }
+    .card p{
+        font-size: 28px;
+    }
+    .combine{
+        flex-direction: column;
+    }
+}
